@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrumSet</title>
+    <style>
+        body{
+            background-image: url(drum.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        div{
+            text-align: center;
+            margin-top: 20%;
+            
+        }
+
+        button{
+            position: relative;
+            font-size: 50px;
+            margin-right: 20px;
+            padding: 20px;
+            width: 8%;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{            
+            box-shadow: 4px 4px 4px 4px rgb(102, 95, 105);
+        }
+        span{
+            position: absolute;
+            color: yellow;
+            top: 330px;
+            margin-left: -100px;
+            text-align: center;
+        }
+        audio{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio controls id="clapSound">
+        <source src="clap.wav" type="audio/mp3">
+    </audio>
+    <audio controls id="hihatSound">
+        <source src="hihat.wav" type="audio/mp3">
+    </audio>
+    <audio controls id="rideSound">
+        <source src="ride.wav" type="audio/mp3">
+    </audio>
+    <audio controls id="snareSound">
+        <source src="snare.wav" type="audio/mp3">
+    </audio>
+    <audio controls id="tomSound">
+        <source src="tom.wav" type="audio/mp3">
+    </audio>
+    <audio controls id="openhatSound">
+        <source src="openhat.wav" type="audio/mp3">
+    </audio>
+    <audio controls id="tinkSound">
+        <source src="tink.wav" type="audio/mp3">
+    </audio>
+    <audio controls id="kickSound">
+        <source src="kick.wav" type="audio/mp3">
+    </audio>
+    <audio controls id="boomSound">
+        <source src="boom.wav" type="audio/mp3">
+    </audio>
+    <div>
+        <button onclick="playAudio1()" id="clap">A</button><span id="clap">CLAP</span>
+        <button onclick="playAudio2()" id="hihat">S</button><span id="hihat">HIHAT</span>
+        <button onclick="playAudio3()" id="ride">D</button><span id="ride">RIDE</span>
+        <button onclick="playAudio4()" id="snare">F</button><span id="snare">SNARE</span>
+        <button onclick="playAudio5()" id="tom">G</button><span id="tom">TOM</span>
+        <button onclick="playAudio6()" id="openhat">H</button><span id="openhat">OPENHAT</span>
+        <button onclick="playAudio7()" id="tink">J</button><span id="tink">TINK</span>
+        <button onclick="playAudio8()" id="kick">K</button><span id="kick">KICK</span>
+        <button onclick="playAudio9()" id="boom">L</button><span id="boom">BOOM</span>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>
